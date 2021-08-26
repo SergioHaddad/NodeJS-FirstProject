@@ -1,4 +1,4 @@
-console.log('Client side javascrupt file is loaded!')
+
 //  var AmountInput = document.getElementById("Amount")
 
 // var result =document.getElementById("FinalResult")
