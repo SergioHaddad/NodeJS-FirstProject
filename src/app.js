@@ -55,7 +55,7 @@ app.get('/WeatherEx',(req,res) => {
 //Help
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is me salam',
+        helpText: 'This is me sergio',
         
     })
 })
