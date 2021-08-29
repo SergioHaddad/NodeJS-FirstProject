@@ -7,6 +7,9 @@ const Dsc = require('./utils/PocketTest')
 const { RSA_NO_PADDING } = require('constants')
 // console.log(__dirname)
 // console.log(path.join(__dirname, '../public'))
+
+
+const port = process.env.PORT || 3000
 /////////Defines paths for Express config 
 const app = express()
 const publicDrectoryPath = path.join(__dirname, '../public')
@@ -33,7 +36,7 @@ app.use(express.static(publicDrectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Andrew Mead'
+        name: 'Sergio Haddad'
     })
 })
 
@@ -41,7 +44,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Salam'
+        name: 'Sergio'
     })
 })
 
@@ -87,9 +90,9 @@ app.get('/PocketManag',(req,res) => {
     )
 })
 //getingDiscountResult
-app.get('/Pocky',(req,res) =>{
-    Dsc(1000)
-})
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+// app.get('/Pocky',(req,res) =>{
+//     Dsc(1000)
+// })
+app.listen(port, () => {
+    console.log('Server is up on port 3000.'+ port)
 })
