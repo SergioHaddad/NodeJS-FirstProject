@@ -88,11 +88,11 @@ app.get('/Weather', (req ,res) => {
 app.get('/PocketManag',(req,res) => {
     res.render('PocketManag'
     )
-})
+}) 
 //getingDiscountResult
 // app.get('/Pocky',(req,res) =>{
 //     Dsc(1000)
 // })
 app.listen(port, () => {
-    console.log('Server is up on port 3000.'+ port)
+    console.log('Server is up on Port 3000.'+ port)
 })
