@@ -11,7 +11,7 @@ const { RSA_NO_PADDING } = require('constants')
 
 const port = process.env.PORT || 5000
 /////////Defines paths for Express config 
-const app = express()
+const app = express()f
 const publicDrectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname,'../templates/views')
 const PartialPath = path.join(__dirname,'../templates/partials')
