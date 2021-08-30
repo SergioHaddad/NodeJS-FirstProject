@@ -1,0 +1,108 @@
+h1 {
+    color:red;
+    font-size: 30px;
+    margin-bottom: 250px;
+    margin-left: 10px;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    color: blue;
+    height: 100%;
+    position: fixed;
+    overflow:auto;
+    background-color: #f1f1f1
+    
+    ;
+}
+li a{
+    display: block;
+    color:#000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #555;
+    color: white;
+}
+.container{
+    width:500px;
+    height:500px;
+    border:5px solid black;
+    position:relative;
+    left:200px
+
+}
+.AmountCon{
+    width: 490px;  
+    height: 110px;  
+    border: 5px solid red;   
+    position: absolute;
+    top:60px; 
+    left:1px;
+}
+.Results{
+    width: 480px;  
+    height: 100px;    
+    position: absolute;
+    top:250px;
+    left:230px;
+
+}
+#Amount{
+    position: absolute;
+    top:20px; 
+    left:10px;
+}
+#LblDate{
+    position: absolute;
+    top:50px; 
+}
+#Date{
+    position: absolute;
+    top:70px; 
+    left:10px;
+}
+#Adding{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top:6px; 
+    left:10px;
+    padding: 0px 15px 2px;
+}
+#Dating{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top:5px; 
+    left:150px;
+    padding: 0px 15px 2px;
+}
+#FinalResult{
+    position: absolute;
+    top:2px; 
+    left:350px;
+    font-size: 30px;
+}
+.main-content{
+    width:500px;
+    height:500px;
+    position:relative;
+    left:200px
+}
+input{
+    border:1px solid #cccccc;
+    padding: 8px;
+}
+button{
+    cursor: pointer;
+    border:1px solid #888888;
+    background:#888888;
+    color:white;
+    padding:8px;
+}
