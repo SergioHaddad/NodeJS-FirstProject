@@ -21,7 +21,7 @@ app.set('views',viewsPath)
 hbs.registerPartials(PartialPath)
 
 //setup static directory to serve 
-app.use(express.static(publicDrectoryPath))
+app.use('/public',express.static(publicDrectoryPath))
 
 // const AboutPath = path.join(__dirname, '../public/about.html')
 // app.use(express.static(AboutPath))
