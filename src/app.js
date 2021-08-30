@@ -9,7 +9,7 @@ const { RSA_NO_PADDING } = require('constants')
 // console.log(path.join(__dirname, '../public'))
 
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 /////////Defines paths for Express config 
 const app = express()
 const publicDrectoryPath = path.join(__dirname, '../public')
@@ -22,7 +22,7 @@ hbs.registerPartials(PartialPath)
 
 //setup static directory to serve 
 app.use(express.static(publicDrectoryPath))
-app.use('/css',express.static(__dirname + 'public/css'))
+app.use('/css',express.static(__dirname + 'css'))
 app.use('/js',express.static(__dirname + 'public/js'))
 // const AboutPath = path.join(__dirname, '../public/about.html')
 // app.use(express.static(AboutPath))
