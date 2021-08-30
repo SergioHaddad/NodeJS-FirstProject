@@ -22,7 +22,8 @@ hbs.registerPartials(PartialPath)
 
 //setup static directory to serve 
 app.use(express.static(publicDrectoryPath))
-
+app.use('/css',express.static(__dirname + 'public/css'))
+app.use('/js',express.static(__dirname + 'public/js'))
 // const AboutPath = path.join(__dirname, '../public/about.html')
 // app.use(express.static(AboutPath))
 // app.get('/about', (req,res) => {
