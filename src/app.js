@@ -12,7 +12,7 @@ const { RSA_NO_PADDING } = require('constants')
 const port = process.env.PORT || 5000
 /////////Defines paths for Express config 
 const app = express()
-// const publicDrectoryPath = path.join(__dirname, '/')
+const publicDrectoryPath = path.join(__dirname, '../Public')
 const viewsPath = path.join(__dirname,'../templates/views')
 const PartialPath = path.join(__dirname,'../templates/partials')
 //setup handlebars engine and views location
@@ -21,7 +21,7 @@ app.set('views',viewsPath)
 hbs.registerPartials(PartialPath)
 
 //setup static directory to serve 
-app.use(express.static(__dirname +'/'))
+app.use(express.static(publicDrectoryPath))
 // app.use('/css',express.static(__dirname + 'pubic/css/style.css'))
 // app.use('/js',express.static(__dirname +  'public/js'))
 // const AboutPath = path.join(__dirname, '../public/about.html')
