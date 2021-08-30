@@ -1,13 +1,3 @@
-
-//  var AmountInput = document.getElementById("Amount")
-
-// var result =document.getElementById("FinalResult")
-// const ADDING = document.getElementById('Adding');
-// ADDING.addEventListener('click', function(e) {
-//     result.innerHTML = AmountInput.value
-//     AmountInput.value=""
-// });
-
 const weatherForm = document.querySelector('form')
 const search= document.querySelector('input')
 const message1=document.querySelector('#message-1')
